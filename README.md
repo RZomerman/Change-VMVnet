@@ -1,6 +1,7 @@
 # Change-VMVnet
 
 This script changes the VNET configuration for a VM - simple VM's only - 
+
 download both files and put them in a directory on your computer - or upload them directly into Azure PowerShell CloudShell
 
 >invoke-webrequest -uri https://raw.githubusercontent.com/RZomerman/Change-VMVnet/main/Change-VMVnet.ps1 -outfile Change-VMVnet.ps1
@@ -15,3 +16,9 @@ run the script with the following parameters
   
   by default - VM's with Public IP's will be skipped - but you can override this with a -Force parameter (this will remove the Public IP)
  > ./Change-VMVnet.ps1 -vmname vm1 -ResourceGroup RSGname -TargetSubnet subnet -targetvnet vnet_uae -TargetVnetResourceGroup Networking -Force
+
+This script does not support
+- VM's with multiple NIC's 
+- VM's with multiple IPConfigurations
+- VM's with Load Balancers or Public IP Addresses
+- NSG's on NIC's will be removed
