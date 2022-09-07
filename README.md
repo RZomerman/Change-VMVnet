@@ -1,4 +1,6 @@
 # Change-VMVnet
+
+This script changes the VNET configuration for a VM - simple VM's only - 
 download both files and put them in a directory on your computer - or upload them directly into Azure PowerShell CloudShell
 
 >invoke-webrequest -uri https://raw.githubusercontent.com/RZomerman/Change-VMVnet/main/Change-VMVnet.ps1 -outfile Change-VMVnet.ps1
