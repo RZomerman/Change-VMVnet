@@ -16,7 +16,7 @@ run the script with the following parameters
  > ./Change-VMVnet.ps1 -vmname vm1 -ResourceGroup RSGname -TargetSubnet subnet -targetvnet vnet_uae -TargetVnetResourceGroup Networking
   
   by default - VM's with Public IP's will be skipped - but you can override this with a -Force parameter (this will remove the Public IP)
- > ./Change-VMVnet.ps1 -vmname vm1 -ResourceGroup RSGname -TargetSubnet subnet -targetvnet vnet_uae -TargetVnetResourceGroup Networking -Force
+ > ./Change-VMVnet.ps1 -vmname vm1 -ResourceGroup RSGname -TargetSubnet subnet -targetvnet vnet_uae -TargetVnetResourceGroup Networking -Force $true
 
 This script does not support
 - VM's with multiple NIC's 
